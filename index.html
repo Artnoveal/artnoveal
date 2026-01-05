@@ -5,105 +5,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>artnoveal | Marca Personal</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
-    header {
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(135deg, #1e293b, #020617);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 2px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #94a3b8;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background: #020617;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #38bdf8;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #020617;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 2rem;
-      background: #38bdf8;
-      color: #020617;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
+  color: #ededed;
+}
+header {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+              url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: #c6a75e;
+}
+a.button {
+  margin-top: 2rem;
+  padding: 0.9rem 2.5rem;
+  border: 1px solid #c6a75e;
+  color: #c6a75e;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  background: #c6a75e;
+  color: #0b0b0b;
+}
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+.card {
+  background: #141414;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(198,167,94,0.15);
+}
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a75e;
+  margin-top: 0;
+}
+.card ul {
+  padding-left: 1.2rem;
+}
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #777;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+</style>
 </head>
 <body>
 
   <header>
     <h1>artnoveal</h1>
-    <p>Estrategia, crecimiento y monetización digital para marcas personales y creadores</p>
-    <a href="#contacto" class="button">Trabajemos juntos</a>
+    <p>Estrategia de crecimiento y monetización digital</p>
+    <a href="#aplicar" class="button">Aplicar para trabajar juntos</a>
   </header>
 
   <section>
-    <h2>Sobre artnoveal</h2>
+    <h2>Qué hago</h2>
     <p>
-      artnoveal es una marca personal enfocada en <strong>estrategia de crecimiento y monetización digital</strong>.
-      Ayudo a creadores, emprendedores y marcas personales a convertir audiencia en ingresos sostenibles mediante
-      sistemas claros, contenido estratégico y modelos de negocio digitales.
+      Trabajo con creadores, entrenadores y expertos que ya tienen conocimiento, audiencia o resultados,
+      pero sienten que <strong>trabajan demasiado para lo que están ganando</strong>.
+    </p>
+    <p>
+      Mi enfoque no es contenido ni marketing genérico. Diseño <strong>estructura, oferta y sistemas</strong>
+      para convertir atención en ingresos digitales sostenibles.
     </p>
   </section>
 
   <section>
-    <h2>Servicios</h2>
+    <h2>Cómo trabajo</h2>
     <div class="grid">
       <div class="card">
-        <h3>Estrategia de crecimiento</h3>
-        <p>Diseño de planes claros para crecer audiencia con intención, consistencia y métricas reales.</p>
+        <h3>Diagnóstico Estratégico de Monetización</h3>
+        <p>Análisis profundo de tu situación actual, bloqueos y oportunidades reales de escalamiento.</p>
+        <ul>
+          <li>Mapa de ingresos actual</li>
+          <li>Bloqueos de crecimiento</li>
+          <li>Oportunidades de producto digital</li>
+          <li>Recomendación estratégica clara</li>
+        </ul>
       </div>
       <div class="card">
-        <h3>Monetización digital</h3>
-        <p>Creación de modelos de ingresos: servicios, productos digitales, suscripciones y ofertas escalables.</p>
+        <h3>Diseño de Programa o Método Propio</h3>
+        <p>Transformo tu conocimiento en un programa estructurado, claro y vendible.</p>
+        <ul>
+          <li>Estructura del programa</li>
+          <li>Promesa de transformación</li>
+          <li>Perfil del alumno ideal</li>
+          <li>Diferenciación estratégica</li>
+        </ul>
       </div>
       <div class="card">
-        <h3>Sistemas para creadores</h3>
-        <p>Estructuración de procesos que convierten contenido en clientes sin depender solo del alcance.</p>
+        <h3>Arquitectura de Oferta de Alto Valor</h3>
+        <p>Diseño de ofertas que justifican precios altos sin quemar tu marca.</p>
+        <ul>
+          <li>Stack de valor</li>
+          <li>Bonos estratégicos</li>
+          <li>Objeciones eliminadas</li>
+          <li>Modelo de precios</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sistema de Ventas y Conversión</h3>
+        <p>Creación del sistema que convierte audiencia en clientes sin depender de tu tiempo.</p>
+        <ul>
+          <li>Mensaje central de venta</li>
+          <li>Proceso de conversión</li>
+          <li>Scripts estratégicos</li>
+          <li>Optimización del recorrido</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Acompañamiento en Lanzamientos</h3>
+        <p>Planificación y activación del lanzamiento inicial de tu programa.</p>
+        <ul>
+          <li>Estrategia de lanzamiento</li>
+          <li>Narrativa y mensajes</li>
+          <li>Activación de audiencia</li>
+          <li>Optimización post-lanzamiento</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Socio Estratégico en Proyectos Digitales</h3>
+        <p>Participación directa en proyectos con alto potencial, trabajando a resultados.</p>
+        <ul>
+          <li>Sin honorarios fijos</li>
+          <li>Involucramiento real</li>
+          <li>Estructura, ventas y crecimiento</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Si quieres crecer y monetizar tu marca digital de forma estratégica, este es el siguiente paso.</p>
-    <p><strong>Email:</strong> contacto@artnoveal.com</p>
-    <p><strong>Instagram / TikTok:</strong> @artnoveal</p>
+  <section id="aplicar">
+    <h2>Aplicar</h2>
+    <p>
+      Si sientes que estás trabajando demasiado para lo que ganas, probablemente no te falta talento,
+      sino estructura.
+    </p>
+    <p><strong>Email:</strong> alexanderpelaez19@outlook.com</p>
+    <p><strong>Instagram:</strong> @alexander_pelaez_19</p>
   </section>
 
   <footer>
